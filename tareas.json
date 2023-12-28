@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Mirar un serie",
+    "completed": true
+  },
+  {
+    "name": "Ir al cine",
+    "completed": false
+  },
+  {
+    "name": "Tomar mates",
+    "completed": true
+  }
+]

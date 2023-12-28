@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+    margin: 1rem 0;
+}
+
+header {
+    height: 20vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10;
+}
+
+header p {
+  margin: 0 20px;
+  max-width: 60em;
+  text-align: center;  
+  line-height: 1.5;
+}
+
+header p strong {
+  color: #A62639;
+}
+
+body {
+  background-image: url("./assests/fondo.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+    min-height: 70vh;
+    width: 85%;
+    margin: 20px auto;
+}
+
+#container-inputs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 40px 0;
+  column-gap: 20px;
+  row-gap: 40px;
+  font-size: 16px;
+}
+
+#container-inputs div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#container-inputs button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+  transition: all .3s ease-out;
+  cursor: pointer;
+  background-color: #DB324D;
+  color: white;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+#container-inputs button img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+
+#container-inputs button:hover {
+  background-color: #A62639;
+}
+
+#container-inputs div:last-child img {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+#container-inputs div:last-child ul {
+  width: 200px;
+  margin: 0;
+}
+
+#container-inputs div:last-child ul li:not(:last-child) {
+  border-bottom: 1px solid #A62639;
+  padding: 0px 0 6px 0;
+}
+
+#container-inputs input {
+  background-color: transparent;
+  transition: all .3s ease-out;
+  border: none;
+  border-bottom: 2px solid #A62639;
+  outline: none;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#container-inputs div:first-child {
+  display: flex;
+  flex-direction: row;
+}
+
+#container-inputs div:last-child input {
+  padding-left: 30px;
+}
+
+#container-inputs div:last-child {
+  position: relative;
+}
+
+#container-inputs input:focus {
+  border-bottom: 2px solid #DB324D;
+}
+
+
+
+footer {
+  border-top: 2px solid gray;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: transparent;
+  color: black;
+  padding-right: 2rem;
+}
+  
+#container-cards {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.37);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+}
+
+hr {
+  width: 50%;
+  margin: auto;
+  color: gray;
+}
+
+.card {
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.card > h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.card > h2 > img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.card > h4 > span {
+  font-weight: bold;
+  color: #DB324D;
+}
+
+ul {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+ul li {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+ul li > img {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+ul li  input {
+  border: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #A62639;
+}
+
+ul li > img:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.btn-delete {
+  color: rgb(172, 40, 40);
+  cursor: pointer;
+}
